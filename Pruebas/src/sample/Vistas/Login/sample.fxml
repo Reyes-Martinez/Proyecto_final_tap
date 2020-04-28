@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="506.0" prefWidth="900.0" stylesheets="@../../Estilos/css.css" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controllers.Controller">
+
+   <children>
+      <TextField fx:id="usuario" layoutX="500.0" layoutY="328.0" prefHeight="26.0" prefWidth="223.0" />
+      <PasswordField fx:id="contraseña" layoutX="500.0" layoutY="430.0" prefHeight="26.0" prefWidth="223.0" />
+      <Button fx:id="acceder" layoutX="500.0" layoutY="467.0"  text="Acceder" />
+      <Button fx:id="registrar" layoutX="671.0" layoutY="467.0"  text="Registar" />
+   </children>
+</Pane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<Pane id="h2" maxHeight="-Infinity" maxWidth="-Infinity"
+      fx:controller="sample.Controllers.ControllerRegistroD"
+      minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" stylesheets="@../../Estilos/EstilosRDoctores.css"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+    <GridPane>
+        <TextField fx:id="nombre" promptText="Nombre" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="apellidos"  promptText="Apellidos" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="especialidad" promptText="Especialidad" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="ncedula" promptText="Numero de cedula" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="direccion" promptText="Direccion" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextField fx:id="municipio" promptText="Municipio" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextField fx:id="estado" promptText="Estado" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+        <TextField fx:id="pais" promptText="Pais" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+        <TextField fx:id="telefono" promptText="Telefono" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+        <TextField fx:id="correo" promptText="Correo" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+        <TextField fx:id="precio" promptText="Precio del sus servicio" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+        <TextField fx:id="usuario" promptText="Nombre de usuario" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+        <PasswordField fx:id="contraseña" promptText="contraseña" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+        <Button fx:id="registar" text="Registar" GridPane.columnIndex="0" GridPane.rowIndex="13"/>
+    </GridPane>
+</Pane>
