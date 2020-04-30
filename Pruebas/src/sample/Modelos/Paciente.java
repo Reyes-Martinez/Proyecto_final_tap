@@ -7,11 +7,11 @@ public class Paciente {
     private String municipio;
     private String pais;
     private String fNacimiento;
-    private int telefono;
+    private String telefono;
     private String alergias;
     private String enfermedades;
     private String cirugia;
-    private String covid;
+    private String covid="F";
     private String usuario;
     private String contraseña;
 
@@ -19,7 +19,7 @@ public class Paciente {
 
     }
 
-    public Paciente(String nombre, String apellidos, String direccion, String estado, String municipio, String pais, String fNacimiento, int telefono, String alergias, String enfermedades, String cirugia, String usuario, String contraseña) {
+    public Paciente(String nombre, String apellidos, String direccion, String estado, String municipio, String pais, String fNacimiento, String telefono, String alergias, String enfermedades, String cirugia, String usuario, String contraseña) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.direccion = direccion;
@@ -91,11 +91,11 @@ public class Paciente {
         this.fNacimiento = fNacimiento;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

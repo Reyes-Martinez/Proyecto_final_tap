@@ -12,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import sample.DataBase.DoctorDAO;
 import sample.DataBase.MySQL;
+import sample.DataBase.PacienteDAO;
+import sample.Modelos.Paciente;
 
 
 import javax.swing.*;
@@ -20,6 +22,7 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
     DoctorDAO doctorDAO = new DoctorDAO(MySQL.getConnection());
+    PacienteDAO pacienteDAO = new PacienteDAO(MySQL.getConnection());
     @FXML
     TextField usuario;
     @FXML
@@ -43,12 +46,12 @@ public class Controller implements Initializable {
                     if(doctorDAO.doctorExiste(usuario.getText(),contraseña.getText())){
                         System.out.println("es un doctor");
                     }
-                    /*else if (loginDAO.pasienteExiste(usuario.getText())){
+                    else if (pacienteDAO.pacienteExiste(usuario.getText(),contraseña.getText())){
                         System.out.println("es un paciente");
                     }
                     else{
                         JOptionPane.showMessageDialog(null,"El usuario no existe ");
-                    }*/
+                    }
             }
             if(actionEvent.getSource()==registrar){
                 String usuario= JOptionPane.showInputDialog("Tipo de usuario(Doctor/Paciente)");
