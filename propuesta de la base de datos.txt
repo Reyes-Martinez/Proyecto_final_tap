@@ -1,0 +1,37 @@
+Hospital 
+
+tabala Doctor
+
+create table doctor(id int not null auto_increment primary key,
+nombres VARCHAR(50) not null,
+apellidos VARCHAR(50) not null,
+especialidad VARCHAR(50) not null,
+ncedula int not null,
+direccion VARCHAR(50),
+municipio VARCHAR(50) not null,
+estado VARCHAR(50) not null,
+pais VARCHAR(50) not null,
+telefono VARCHAR(50) not null,
+correo VARCHAR(50),
+precio int not null,
+usuario VARCHAR(50) not null,
+contraseña VARCHAR(50) not null);
+
+
+tabla Paciente
+
+create table paciente(id int not null auto_increment primary key, 
+nombres VARCHAR(50) not null,
+apellidos VARCHAR(50) not null,
+direccion VARCHAR(50) not null,
+estado VARCHAR(50) not null,
+municipio VARCHAR(50) not null,
+pais VARCHAR(50) not null,
+fnacimiento VARCHAR(50) not null,
+telefono VARCHAR(50) not null,
+alergias VARCHAR(50) not null,
+ecronicas VARCHAR(50) not null,
+cirugias VARCHAR(50) not null,
+covid enum('T','F'),
+usuario VARCHAR(50) not null,
+contraseña VARCHAR(50) not null);
